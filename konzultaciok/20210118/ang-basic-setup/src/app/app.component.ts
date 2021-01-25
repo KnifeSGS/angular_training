@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Martha\'s';
+  title = 'Time: ';
+
+  constructor() {
+    setInterval(() => {
+      const cDate = new Date();
+      const time = [
+        cDate.getHours(),
+        cDate.getMinutes(),
+        cDate.getSeconds(),
+      ].map(part => part < 10 ? `0${part}` : part);
+      this.title = `Time now: ${time.join(':')}`;
+    }, 1000);
+  }
 }

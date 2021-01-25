@@ -2,14 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { WatchComponent } from './watch/watch.component';
-import { AnalogWatchComponent } from './analog-watch/analog-watch.component';
+import { PricingPageComponent } from './pricing-page/pricing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WatchComponent,
-    AnalogWatchComponent
+    PricingPageComponent
   ],
   imports: [
     BrowserModule
